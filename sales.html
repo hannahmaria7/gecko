@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>Merchandise Form</title>
+    <script type="text/javascript" src="shoeform.js"></script>
+    <link href="styles/cakeform.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload='hideTotal()'>
+    <div id="wrap">
+        <form action="" id="sales" onsubmit="return false;">
+        <div>
+            <div class="cont_order">
+               <fieldset>
+                <legend>Pick your shoes!</legend>
+               
+                <label class='radiolabel'><input type="radio"  name="selectedshoes" value="ballet" onclick="calculateTotal()" /> Ballet Shoes ($20)</label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedshoes" value="jazz" onclick="calculateTotal()" /> Jazz Shoes ($25)</label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedshoes" value="salsa" onclick="calculateTotal()" />Salsa Shoes ($35)</label><br/>
+                                <br/>
+                <label >Colour</label>
+         
+                <select id="colour" name='colour' onchange="calculateTotal()">
+                <option value="None">Select colour</option>
+                <option value="yellow">yellow($5)</option>
+                <option value="pink">pink($5)</option>
+                <option value="black">black($7)</option>
+              
+               </select>
+                <br/>
+                <p>
+                <label for='includeribbons' class="inlinelabel">Include 
+				Candles($5)</label>
+               <input type="checkbox" id="includeribbons" name='includeribbons' onclick="calculateTotal()" />
+               </p>
+               
+               <div id="totalPrice"></div>
+                
+                </fieldset>
+            </div>
+                       <input type='submit' id='submit' value='Submit' onclick="calculateTotal()" />
+        </div>  
+       </form>
+	</div><!--End of wrap-->
+
+</body>
+</html>

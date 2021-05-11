@@ -1,0 +1,44 @@
+﻿<body>
+<div class = "topnav">
+	<img alt="Image not found!" height="103" src="jazz-dancer.jpg" width="149" /><a class="active" href = "homepage.html">Home</a>
+    <a  href = "Register.html">Registration</a>
+    <a  href = "classreg.php">Sign up for a class</a>
+    <a  href = "create_event.html">Create an Event</a>
+    <a  href = "table_display.php">Show Reports</a>
+ <a  href = "merch2.html">Merchandise</a>
+
+<img alt="Image not Found" height="96" src="hiphopdance.png" width="136" /></div>
+<br></br>
+<script type="text/javascript" src="shoeform.js"></script>
+
+<form action="" id="shoeform" onsubmit="return false;">
+   <fieldset>
+    <legend>Choose your shoes!</legend>
+    <label >Dancing Shoes</label>
+    <input type="radio"  name="selectedshoes" value="jazz"
+    onclick="calculateTotal()" />
+   jazz Shoes ($20)
+    <input type="radio"  name="selectedshoes" value="irish"
+    onclick="calculateTotal()" />
+    Irish Dancing Shoes ($25)
+    <input type="radio"  name="selectedshoes" value="ballet"
+    onclick="calculateTotal()" />
+   Ballet Shoes($35)
+    <input type="radio"  name="selectedshoes" value="salsa"
+    onclick="calculateTotal()" />
+    Salsa Shoes($75)
+ 
+
+     
+       <br/>
+    <p>
+    <label for='includecandles' class="inlinelabel">
+    Include ribbons($5)</label>
+    <input type="checkbox" id="includecandles" name='includecandles'
+    onclick="calculateTotal()" />
+   </p>
+ <input type='submit' id='submit' value='Submit' onclick="calculateTotal()" />
+       <div id="totalPrice" style="height: 60px; width: 638px"></div>
+ 
+    </fieldset>
+</form>

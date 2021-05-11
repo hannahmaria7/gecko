@@ -1,0 +1,74 @@
+﻿<head>
+<style type="text/css">
+.auto-style1 {
+font-size: xx-large;
+}
+.auto-style2 {
+font-size: medium;
+}
+.auto-style3 {
+	font-size: large;
+}
+</style>
+</head>
+<script type="text/javascript" src="danceform.js"></script>
+
+<div class = "topnav">
+	<img alt="Image not found!" height="103" src="jazz-dancer.jpg" width="149" /><a class="active" href = "homepage.html">Home</a>
+    <a  href = "Register.html">Registration</a>
+    <a  href = "classreg.php">Sign up for a class</a>
+    <a  href = "create_event.html">Create an Event</a>
+    <a  href = "table_display.php">Show Reports</a>
+ <a  href = "sale.htm">Dancing Shoes for Sale</a>
+<img alt="Image not Found" height="96" src="hiphopdance.png" width="136" /></div>
+<br>
+
+
+
+<form action="" id="sale" onsubmit="return false;">
+   <fieldset>
+    <legend class="auto-style1">Dancing Shoes For Sale</legend>
+    <label ><br><span class="auto-style3"><strong>Shoes:</strong></span><br class="auto-style3"><br></label>
+   
+    <input type="radio"  name="selectedShoe" value="Ballet"
+    onclick="calculateTotal()" /> <span class="auto-style2">Ballet - €30</span><br class="auto-style2">
+   
+    <input type="radio"  name="selectedShoe" value="Salsa"
+    onclick="calculateTotal()" class="auto-style2" /><span class="auto-style2"> Salsa - €40</span><br class="auto-style2">
+   
+    <input type="radio"  name="selectedShoe" value="Jazz"
+    onclick="calculateTotal()" class="auto-style2" /><span class="auto-style2"> 
+	Jazz - €25</span><br class="auto-style2">
+   
+    <input type="radio"  name="selectedShoe" value="Tango"
+    onclick="calculateTotal()" class="auto-style2" /><span class="auto-style2"> 
+	Tango - €25</span><label ><br class="auto-style2"><br><span class="auto-style3">Colour</span><strong>:</strong></label><br>
+ 
+    <select id="selectedColour" name='Colour'
+    onchange="calculateTotal()" class="auto-style2">
+    
+    <option value="Colour">Select Colour</option>
+    <option value="Black">Black (€2 extra)</option>
+    <option value="White">White-(€3 extra)</option>
+    <option value="Pink">Pink- (€4 extra)</option>
+         </select>
+    
+   
+   
+    <p>
+    <label for='includeRibbon' class="inlinelabel">
+    <span class="auto-style2">Ribbon (€3 extra)</span></label>
+    <input type="checkbox" id="includeRibbon" name='includeRibbon'
+    onclick="calculateTotal()" class="auto-style2" />
+   </p>
+ 
+    <div id="totalPrice" class="auto-style2">Total Amount Due €</div>
+ 
+    </fieldset>
+   
+   
+</form>
+
+
+
+
